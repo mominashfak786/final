@@ -245,102 +245,98 @@ const Enterprise = () => {
       </section>
 
       <div class="container-features">
-  <div class="title-features">
-    <h2>FEATURES</h2>
-    <hr />
-  </div>
+        <div class="title-features">
+          <h2>FEATURES</h2>
+          <hr />
+        </div>
 
-  <ul class="features">
-    <li class="item-features">
-      <div class="cell features-left">
-        <img class="img-valor" src={mantenimiento} alt="logo" />
+        <ul class="features">
+          <li class="item-features">
+            <div class="cell features-left">
+              <img class="img-valor" src={mantenimiento} alt="logo" />
+            </div>
+            <div class="cell">
+              <p class="text pre-line">
+                The only Subscription Based Facility Maintenance Service
+                Provider
+              </p>
+            </div>
+          </li>
+          <li class="item-features">
+            <div class="cell">
+              <p class="text pre-line">
+                Improved clarity of solutions and process will not be tedious
+                since we will be giving service at a convenient price
+              </p>
+            </div>
+            <div class="cell features-right">
+              <img class="img-valor" src={clarity} alt="logo" />
+            </div>
+          </li>
+          <li class="item-features">
+            <div class="cell features-left">
+              <img class="img-valor" src={customer} alt="logo" />
+            </div>
+            <div class="cell">
+              <p class="text pre-line">
+                Impressive and permanent solutions with customer satisfaction
+              </p>
+            </div>
+          </li>
+          <li class="item-features">
+            <div class="cell">
+              <p class="text pre-line">100+ services under single package</p>
+            </div>
+            <div class="cell features-right">
+              <img class="img-valor" src={services} alt="logo" />
+            </div>
+          </li>
+          <li class="item-features">
+            <div class="cell features-left">
+              <img class="img-valor" src={user} alt="logo" />
+            </div>
+            <div class="cell">
+              <p class="text pre-line">
+                Client can Track service records by just login into dashboard
+              </p>
+            </div>
+          </li>
+          <li class="item-features">
+            <div class="cell">
+              <p class="text pre-line">24x7 Help Desk</p>
+            </div>
+            <div class="cell features-right">
+              <img class="img-valor" src={clock} alt="logo" />
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="cell">
-        <p class="text pre-line">
-          The only Subscription Based Facility Maintenance Service Provider
-        </p>
-      </div>
-    </li>
-    <li class="item-features">
-      <div class="cell">
-        <p class="text pre-line">
-          Improved clarity of solutions and process will not be tedious since
-          we will be giving service at a convenient price
-        </p>
-      </div>
-      <div class="cell features-right">
-        <img class="img-valor" src={clarity} alt="logo" />
-      </div>
-    </li>
-    <li class="item-features">
-      <div class="cell features-left">
-        <img class="img-valor" src={customer} alt="logo" />
-      </div>
-      <div class="cell">
-        <p class="text pre-line">
-          Impressive and permanent solutions with customer satisfaction
-        </p>
-      </div>
-    </li>
-    <li class="item-features">
-      <div class="cell">
-        <p class="text pre-line">100+ services under single package</p>
-      </div>
-      <div class="cell features-right">
-        <img class="img-valor" src={services} alt="logo" />
-      </div>
-    </li>
-    <li class="item-features">
-      <div class="cell features-left">
-        <img class="img-valor" src={user} alt="logo" />
-      </div>
-      <div class="cell">
-        <p class="text pre-line">
-          Client can Track service records by just login into dashboard
-        </p>
-      </div>
-    </li>
-    <li class="item-features">
-      <div class="cell">
-        <p class="text pre-line">24x7 Help Desk</p>
-      </div>
-      <div class="cell features-right">
-        <img class="img-valor" src={clock} alt="logo" />
-      </div>
-    </li>
-  </ul>
-</div>
-
 
       <ServicesSliderEnterprice />
 
-      <section class="us">
+      <section class="us mt-6 md:mb-0 mb-20">
         <div class="choose-us">
           <h2>Why Choose Us?</h2>
-          <div class="item-us">
-            <img className="testcontact" src={qualified} alt="Icon 1" />
-            <h3>Qualified Personnel</h3>
-            <p>
-              We have qualified professionals for all the services we provide.
-              Quality service is our pride.
-            </p>
-          </div>
-          <div class="item-us">
-            <img className="testcontact" src={services2} alt="Icon 2" />
-            <h3>Impeccable Service</h3>
-            <p>
-              Our services are world-class and we ensure to deliver give on.time
-              delivery.
-            </p>
-          </div>
-          <div class="item-us ">
-            <img className="testcontact" src={support} alt="Icon 3" />
-            <div>
-              <h3>24/7 Customer Service</h3>
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full sm:w-auto mb-6 sm:mb-0">
+              <img class="mx-auto" src={qualified} alt="Icon 1" />
+              <h3>Qualified Personnel</h3>
               <p>
-                Our clients can reach us at any moment in time. During the day
-                or night.
+                We have qualified professionals for all the services we provide.
+                Quality service is our pride.
               </p>
+            </div>
+            <div class="w-full sm:w-auto mb-6 sm:mb-0">
+              <img class="mx-auto" src={services2} alt="Icon 2" />
+              <h3>Impeccable Service</h3>
+              <p>Our services are world-class and we ensure timely delivery.</p>
+            </div>
+            <div class="w-full sm:w-auto">
+              <img class="mx-auto" src={support} alt="Icon 3" />
+              <div>
+                <h3>24/7 Customer Service</h3>
+                <p>Our clients can reach us at any moment, day or night.</p>
+              </div>
             </div>
           </div>
         </div>

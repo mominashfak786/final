@@ -4,7 +4,7 @@ import "../style/slider.css";
 export const ServicesSliderEnterprice = () => {
     return (
       <div className="slider-container  sm:flex sm:flex-col md:flex-row text-[#fff] ">
-        <div className="sm:w-4/5 md:w-2/4 md:pl-10 pl-0 pt-20  pb-5 text-white">
+        <div className="sm:w-4/5 md:w-2/4 md:pl-10 pl-0 pt-10  pb-5 text-white">
           <h2 className="text-center text-2xl font-bold">BEFORE SUBSCRIPTION</h2>
           <Carousel infiniteLoop showIndicators={false}>
             <div className="">
