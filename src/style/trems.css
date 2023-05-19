@@ -1,0 +1,28 @@
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 2rem;
+  
+    background-color: #eee;
+  }
+  
+  .trams {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    padding: 1rem;
+    background-color: #fff;
+    width: 768px;
+    height: 100%;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 1rem 2rem -0.25rem rgba(0, 0, 0, 0.25);
+    
+
+  
+   
+     
+  }

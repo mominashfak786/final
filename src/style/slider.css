@@ -1,0 +1,13 @@
+.slideritem{
+    border: 2px solid white;
+  }
+  
+  
+  
+  .slider-container{
+      background-color: #000;
+      background-image: linear-gradient(0deg, rgba(44,73,154,0.7)0%, rgba(44,73,154,0.7)100%), url("../assets/oterhs/subscrube.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+    
