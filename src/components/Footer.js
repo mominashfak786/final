@@ -186,20 +186,20 @@ const Footer = () => {
             <div className="mt-3">
               <div className="footer-title text-xl text-gray-900">Europe</div>
               <div className="flex flex-wrap">
-                <p className="md:mr-5">United Kingdom</p>
-                <p className="md:mr-5">Ireland</p>
-                <p className="md:mr-5">Netherlands</p>
-                <p className="md:mr-5">Italy</p>
-                <p className="md:mr-5">Hungary</p>
-                <p className="md:mr-5">Switzerland</p>
-                <p className="md:mr-5">Germany</p>
-                <p className="md:mr-5">Poland</p>
-                <p className="md:mr-5">Sweden</p>
-                <p className="md:mr-5">Denmark</p>
-                <p className="md:mr-5">Belgium</p>
-                <p className="md:mr-5">France</p>
-                <p className="md:mr-5">Spain</p>
-                <p className="md:mr-5">Portugal</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">United Kingdom</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Ireland</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Netherlands</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Italy</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Hungary</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Switzerland</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Germany</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Poland</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Sweden</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Denmark</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Belgium</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">France</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Spain</p>
+                <p className="md:mr-5 w-1/2 sm:w-auto">Portugal</p>
               </div>
             </div>
 
@@ -208,47 +208,48 @@ const Footer = () => {
                 North America
               </div>
               <div className="flex flex-wrap">
-                <p className="md:mr-5">Canada</p>
-                <p className="md:mr-5">United States of America</p>
+                <p className="md:mr-5 mr-5">Canada</p>
+                <p className="md:mr-5  mr-5">United States of America</p>
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-between sm:items-center">
+      <hr />
+      <div className="flex flex-col px-8 justify-center items-center sm:flex-row sm:justify-between sm:items-center">
   <div className="logo-footer mb-4  ">
     <img src={Logo} alt="Company Logo" />
-    <div className="text-sm">
+    <div className="text-sm items-center">
       <p>©2023 All rights reserved. LetUsMaintain</p>
     </div>
   </div>
-  <div className="flex">
+  <div className="flex pb-4 ">
     <a
-      className="mr-2 sm:mr-0 mb-2 sm:mb-0"
+      className="mr-2 sm:mr-0  sm:mb-0"
       href="https://www.facebook.com/profile.php?id=100092328792629"
       target="_blank"
     >
-      <img src={facebook} alt="Facebook" className="w-10 h-10 sm:w-12 sm:h-12" />
+      <img src={facebook} alt="Facebook" className="w-5 h-5 sm:w-8 sm:h-8" />
     </a>
     <a
-      className="mr-2 sm:mr-0 mb-2 sm:mb-0"
+      className="mr-2 sm:mr-0  sm:mb-0"
       href="https://instagram.com/letusmaintain?igshid=NTc4MTIwNjQ2YQ=="
       target="_blank"
     >
-      <img src={instagram} alt="Instagram" className="w-10 h-10 sm:w-12 sm:h-12" />
+      <img src={instagram} alt="Instagram" className="w-5 h-5 sm:w-8 sm:h-8" />
     </a>
     <a
-      className="mr-2 sm:mr-0 mb-2 sm:mb-0"
+      className="mr-2 sm:mr-0  sm:mb-0"
       href="https://twitter.com/letusmaintain?s=21&t=ITFELYxk4Sjk4PwhNSI7WQ"
       target="_blank"
     >
-      <img src={twitter} alt="Twitter" className="w-10 h-10 sm:w-12 sm:h-12" />
+      <img src={twitter} alt="Twitter" className="w-5 h-5 sm:w-8 sm:h-8" />
     </a>
     <a
       href="https://www.linkedin.com/showcase/letusmaintain-com/"
       target="_blank"
     >
-      <img src={linkedin} alt="LinkedIn" className="w-10 h-10 sm:w-12 sm:h-12" />
+      <img src={linkedin} alt="LinkedIn" className="w-5 h-5 sm:w-8 sm:h-8" />
     </a>
   </div>
 </div>

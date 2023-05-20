@@ -2,49 +2,52 @@ import React from "react";
 
 const Induvidualvisits = () => {
   return (
-    <div className="w-1/2 m-auto pb-20">
-      <span className="text-3xl font-bold text-[#2c4a9a]">
-        Services In Package For Individual Customers
-      </span>
-      <div className="overflow-x-auto mt-5">
-        <table className="table w-full">
-          {/* head */}
-          <thead>
-            <tr>
-              <th>Type of Services</th>
-              <th>Number of Visits</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Electrical & Electronics Maintenance</th>
-              <td>18</td>
-            </tr>
-            <tr>
-              <th>Plumbing Maintenance</th>
-              <td>10</td>
-            </tr>
-            {/* row 3 */}
-            <tr>
-              <th>Computer System Maintenance (Hardware & Software)</th>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>Carpenter Services</th>
-              <td>6</td>
-            </tr>
-            <tr>
-              <th>Cleaning Solutions</th>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th>F.M.O Review</th>
-              <td>Half Yearly Premises Audit</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <>
+    <div class="w-full mx-auto pb-20">
+  <div class="text-center">
+    <span class="block text-2xl font-bold text-[#2c4a9a]">
+      Services In Package For Individual Customers
+    </span>
+  </div>
+  <div class="w-11/12 md:w-3/4 mx-auto mt-5 overflow-x-auto border-2 border-gray-900 rounded-lg shadow-lg">
+    <table class="w-full table">
+      <thead>
+        <tr>
+          <th class="py-2 px-3">Type of Services</th>
+          <th class="py-2 px-3">Number of Visits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="py-2 px-3">Electrical & Electronics Maintenance</td>
+          <td class="py-2 px-3">18</td>
+        </tr>
+        <tr>
+          <td class="py-2 px-3">Plumbing Maintenance</td>
+          <td class="py-2 px-3">10</td>
+        </tr>
+        <tr>
+          <td class="py-2 px-3">Computer System Maintenance (Hardware & Software)</td>
+          <td class="py-2 px-3">8</td>
+        </tr>
+        <tr>
+          <td class="py-2 px-3">Carpenter Services</td>
+          <td class="py-2 px-3">6</td>
+        </tr>
+        <tr>
+          <td class="py-2 px-3">Cleaning Solutions</td>
+          <td class="py-2 px-3">4</td>
+        </tr>
+        <tr>
+          <td class="py-2 px-3">F.M.O Review</td>
+          <td class="py-2 px-3">Half Yearly Premises Audit</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+    </>
   );
 };
 

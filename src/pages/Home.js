@@ -9,52 +9,54 @@ import useTitle from "../hooks/usetitle";
 
 const Home = () => {
   const [element, setElement] = useState(false);
-  const [enterprice, setEnterprice] = useState(false);
-  const [indivisul, setIndivisul] = useState(false);
+  const [enterprise, setEnterprise] = useState(false);
+  const [individul, setIndividul] = useState(false);
   const [type, setType] = useState("");
   useTitle("Welcome to letusmaintain");
 
+  const handleEnterpriseClick = () => {
+    setEnterprise(true);
+    setIndividul(false);
+  };
+
+  const handleIndividulClick = () => {
+    setEnterprise(false);
+    setIndividul(true);
+  };
+
   return (
     <div className="size">
-  {element ? (
-    <></>
-  ) : (
-    <div className={` ${enterprice || type === "individual" ? "hidden" : ""}`}>
-      <nav className="navbar items-center">
-        <img src={logo2} alt="Company Logo" className="logo" />
-      </nav>
-      <video
-        src={video}
-        autoPlay
-        muted
-        loop
-        className="abosolute w-screen h-screen object-cover"
-      ></video>
-      <div className="floating-container flex">
-        <p
-          onClick={() => setEnterprice(true)}
-          className="floating-link cursor-pointer"
-        >
-          <div className="floating-enterprice">
-            <h2 className="title-secondary">Enterprise</h2>
+      {element ? (
+        <></>
+      ) : (
+        <div className={`${enterprise || individul ? "hidden" : ""}`}>
+          <nav className="navbar items-center">
+            <img src={logo2} alt="Company Logo" className="logo" />
+          </nav>
+          <video
+            src={video}
+            autoPlay
+            muted
+            loop
+            className="abosolute w-screen h-screen object-cover"
+          ></video>
+          <div className="floating-container flex">
+            <p onClick={handleEnterpriseClick} className="floating-link cursor-pointer">
+              <div className="floating-enterprice">
+                <h2 className="title-secondary">Enterprise</h2>
+              </div>
+            </p>
+            <p onClick={handleIndividulClick} className="floating-link cursor-pointer">
+              <div className="floating-customer">
+                <h2 className="title-secondary">Individual</h2>
+              </div>
+            </p>
           </div>
-        </p>
-        <p
-          onClick={() => setIndivisul(true)}
-          className="floating-link cursor-pointer"
-        >
-          <div className="floating-customer">
-            <h2 className="title-secondary">Individual</h2>
-          </div>
-        </p>
-      </div>
+        </div>
+      )}
+      {enterprise && <Enterprise />}
+      {individul && <Individul />}
     </div>
-  )}
-  {enterprice && <Enterprise />}
-  {indivisul && <Individul />}
-</div>
-
-    
   );
 };
 

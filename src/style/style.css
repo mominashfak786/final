@@ -752,3 +752,65 @@ form img {
 #content p {
   padding: 15px 0px;
 }
+
+
+/* for indvidual table css */
+@media (max-width: 640px) {
+  .table {
+    table-layout: auto;
+  }
+
+  .table th,
+  .table td {
+    white-space: normal;
+  }
+}
+/* for carousal */
+.carousel-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(44, 42, 42);
+
+}
+
+/* hamburger css */
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background-color: #000000;
+  color: #fff;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.sidebar-content {
+  max-width: 100%;
+  padding: 15px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-decoration: underline;
+}
+
+.sidebar-link:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.sidebar-link-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+

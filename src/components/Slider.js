@@ -14,13 +14,14 @@ export const SliderEnterprise = () => {
   return (
     <div className="-mt-10">
       <div className="relative  h-screen">
-        <Carousel
-          transitionTime={0.1}
-          infiniteLoop
-          autoPlay={true}
-          interval={1000}
-          showIndicators={false}
-        >
+      <Carousel
+  transitionTime={0.5}
+  infiniteLoop
+  autoPlay={true}
+  interval={2000}
+  showIndicators={false}
+  className="carousel-container"
+>
           <div>
             <p className="pt-10 pb-10">
               <img
@@ -32,7 +33,7 @@ export const SliderEnterprise = () => {
             </p>
 
             <div className="absolute w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              {/* <img className="w-32 mb-4" src={logo} alt="" /> */}
+              <img className="w-32 mb-4" src={logo} alt="" />
 
               <div className="flex flex-col md:flex-row gap-10 justify-center mt-6">
                 <Link to="/regenterprise" className="block md:inline-block">
@@ -56,7 +57,7 @@ export const SliderEnterprise = () => {
               />
             </p>
             <div className="absolute w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              {/* <img className="w-32 mb-4 " src={logo} alt="" /> */}
+              <img className="w-32 mb-4 " src={logo} alt="" />
               <div className="flex flex-col md:flex-row gap-10 justify-center mt-6">
                 <Link to="/regenterprise" className="block md:inline-block">
                   <button className="btn bg-[#2c4a9a] md:text-2xl text-sm whitespace-nowrap font-bold text-white px-6 py-1">
@@ -80,68 +81,67 @@ export const SliderEnterprise = () => {
 export const SliderIndividual = () => {
   return (
     <div className="-mt-10">
-      <div className="relative  h-screen">
-        <Carousel
-          transitionTime={0.1}
-          infiniteLoop
-          autoPlay={true}
-          interval={1000}
-          showIndicators={false}
-        >
-          <div>
-            <p className="pt-10 pb-10">
-              <img className=" h-screen" src={indu1} alt="" />
-            </p>
-            <div className="absolute w-1/2 top-[40%] left-[25%]">
-              <img className="w-32" src={logo} alt="" />
-              <div className="flex gap-10 justify-center mt-20">
-                <Link to="/regindivudal">
-                  <button className=" btn bg-[#2c4a9a] text-2xl font-bold text-white">
-                    Get Started
-                  </button>
-                </Link>
-                <button className=" btn bg-[#2c4a9a] text-2xl font-bold text-white">
-                  Go Enterprise Site
+    <div className="relative  h-screen">
+    <Carousel
+  transitionTime={0.5}
+  infiniteLoop
+  autoPlay={true}
+  interval={2000}
+  showIndicators={false}
+  className="carousel-container"
+>
+
+<div>
+          <p className="pt-10 pb-10">
+            <img
+              className="h-screen object-cover w-full md:h-screen"
+              src={indu4}
+              alt=""
+              style={{ objectPosition: "15% 85%" }}
+            />
+          </p>
+            <div className="absolute w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img className="w-32 mb-4" src={logo} alt="" />
+
+            <div className="flex flex-col md:flex-row gap-10 justify-center mt-6">
+              <Link to="/regindivudal" className="block md:inline-block">
+                <button className="btn bg-[#2c4a9a]  md:text-2xl text-sm font-bold whitespace-nowrap text-white px-6 py-1">
+                  Get Started
                 </button>
-              </div>
+              </Link>
+              <button className="btn bg-[#2c4a9a]  md:text-2xl text-sm font-bold whitespace-nowrap text-white px-6 py-1">
+              Go Enterprise Site
+              </button>
             </div>
           </div>
-          <div>
-            <p className="pt-10 pb-10">
-              <img className=" h-screen" src={indu3} alt="" />
-            </p>
-            <div className="absolute w-1/2 top-[40%] left-[25%]">
-              <img className="w-32" src={logo} alt="" />
-              <div className="flex gap-10 justify-center mt-20">
-                <Link to="/regindivudal">
-                  <button className=" btn bg-[#2c4a9a] text-2xl font-bold text-white">
-                    Get Started
-                  </button>
-                </Link>
-                <button className=" btn bg-[#2c4a9a] text-2xl font-bold text-white">
-                  Go Enterprise Site
+          </div>
+          
+        <div>
+          <p className="pt-10 pb-10">
+            <img
+              className="h-screen object-cover w-full md:h-screen"
+              src={indu3}
+              alt=""
+              style={{ objectPosition: "65% 65%" }}
+            />
+          </p>
+
+          <div className="absolute w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img className="w-32 mb-4" src={logo} alt="" />
+
+            <div className="flex flex-col md:flex-row gap-10 justify-center mt-6">
+              <Link to="/regindivudal" className="block md:inline-block">
+                <button className="btn bg-[#2c4a9a]  md:text-2xl text-sm font-bold whitespace-nowrap text-white px-6 py-1">
+                  Get Started
                 </button>
-              </div>
+              </Link>
+              <button className="btn bg-[#2c4a9a]  md:text-2xl text-sm font-bold whitespace-nowrap text-white px-6 py-1">
+              Go Enterprise Site
+              </button>
             </div>
           </div>
-          <div>
-            <p className="pt-10 pb-10">
-              <img className=" h-screen" src={indu4} alt="" />
-            </p>
-            <div className="absolute w-1/2 top-[40%] left-[25%]">
-              <img className="w-32" src={logo} alt="" />
-              <div className="flex gap-10 justify-center mt-20">
-                <Link to="/regindivudal">
-                  <button className=" btn bg-[#2c4a9a] text-2xl font-bold text-white">
-                    Get Started
-                  </button>
-                </Link>
-                <button className=" btn bg-[#2c4a9a] text-2xl font-bold text-white">
-                  Go Enterprise Site
-                </button>
-              </div>
-            </div>
-          </div>
+        </div>
+         
         </Carousel>
       </div>
       <div className="absolute top-0">

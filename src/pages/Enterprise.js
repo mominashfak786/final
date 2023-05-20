@@ -50,28 +50,6 @@ const Enterprise = () => {
   }, []);
   return (
     <div>
-      {/* <header className="relative">
-        <div>
-          <nav id="nav">
-            <Nav type="enterprice" />
-          </nav>
-
-          <div class=" enterpricebg">
-            <div class="text-opening">
-              <h1>
-                <img class="logo-header" src={logo2} alt="Let Us Maintain" />
-              </h1>
-              <Link to="/regindividual">
-                {" "}
-                <button class="button-light">Get Started</button>
-              </Link>
-              <Link to="/">
-                <a class="button-light cursor-pointer">Go Individual</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </header> */}
 
       <SliderEnterprise />
       <div

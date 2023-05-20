@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../style/style.css"
+import "../style/style.css";
 
 import aboutus from "../assets/oterhs/construccion.jpg";
 import Electrical from "../assets/services/electrical.jpg";
@@ -16,24 +16,22 @@ import clarity from "../assets/oterhs/features-clarity.png";
 import customer from "../assets/oterhs/features-custumer.png";
 import services from "../assets/oterhs/features-100services.png";
 
-import user from "../assets/oterhs/feature-user.png"
-import clock from '../assets/oterhs/feature-24hours.png'
-import qualified from "../assets/oterhs/icons8-aprobación-80.png"
-import services2 from "../assets/oterhs/icons8-servicio-50.png"
-import support from "../assets/oterhs/icons8-auriculares-50.png"
+import user from "../assets/oterhs/feature-user.png";
+import clock from "../assets/oterhs/feature-24hours.png";
+import qualified from "../assets/oterhs/icons8-aprobación-80.png";
+import services2 from "../assets/oterhs/icons8-servicio-50.png";
+import support from "../assets/oterhs/icons8-auriculares-50.png";
 
-import click from "../assets/oterhs/feature-clickk.png"
-import login from "../assets/oterhs/feature-loginn.png"
-import year from "../assets/oterhs/feature-year.png"
+import click from "../assets/oterhs/feature-clickk.png";
+import login from "../assets/oterhs/feature-loginn.png";
+import year from "../assets/oterhs/feature-year.png";
 
 import { Link } from "react-router-dom";
-
-
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSpring, animated } from "react-spring";
-import {SliderEnterprise, SliderIndividual} from "../components/Slider"
+import { SliderEnterprise, SliderIndividual } from "../components/Slider";
 import { ServicesSliderEnterprice } from "../components/Subscribe";
 import Footer from "../components/Footer";
 import Induvidualvisits from "../components/Induvidualvisits";
@@ -50,7 +48,7 @@ function Number({ n }) {
 }
 
 const Individul = () => {
- useTitle("Individual")
+  useTitle("Individual");
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -58,31 +56,11 @@ const Individul = () => {
   }, []);
   return (
     <div>
-      {/* <header className="relative">
-        <div>
-          <nav id="nav">
-            <Nav type="enterprice" />
-          </nav>
-
-          <div class=" enterpricebg">
-            <div class="text-opening">
-              <h1>
-                <img class="logo-header" src={logo2} alt="Let Us Maintain" />
-              </h1>
-              <Link to="/regindividual">
-                {" "}
-                <button class="button-light">Get Started</button>
-              </Link>
-              <Link to="/">
-                <a class="button-light cursor-pointer">Go Individual</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </header> */}
-
-<SliderIndividual/>
-<div id="about" class="sm:flex sm:flex-col md:flex-row  md:flex lg:flex lg:flex-row gap-10 justify-between w-2/3 m-auto pt-20 ">
+      <SliderIndividual />
+      <div
+        id="about"
+        class="sm:flex sm:flex-col md:flex-row  md:flex lg:flex lg:flex-row gap-10 justify-between w-2/3 m-auto pt-20 "
+      >
         <div class="etiqueta-item">
           <p class="etiquetas-info"> 2019</p>
           <p class="etiquetas-titulo">Founded</p>
@@ -112,13 +90,21 @@ const Individul = () => {
         </div>
       </div>
 
-      <div className="flex-col md:flex-row flex gap-32 pt-24 pb-24 justify-center items-center">
-        <img data-aos="fade-left" className="w-1/4" src={aboutus} alt="" />
-        <div data-aos="fade-right" className="w-2/5">
-          <h2 className="text-4xl font-bold"> What is LetUsMaintain.com? </h2>
-          <p className="mt-8">
+     
+      <div className="flex flex-col md:flex-row gap-4 md:gap-32 pt-8 md:pt-24 pb-8 md:pb-24 justify-center items-center">
+        <img
+          data-aos="fade-left"
+          className="w-3/4 md:w-1/4"
+          src={aboutus}
+          alt=""
+        />
+        <div data-aos="fade-right" className="w-full md:w-2/5">
+          <h2 className="md:text-4xl text-xl  md:text-5xl font-bold  md:ml-0 md:mr-0 ml-3 mr-2">
+            What is LetUsMaintain.com?
+          </h2>
+          <p className="mt-4 md:mt-8 md:ml-0 md:mr-0 ml-5 mr-5">
             We are the one & only Facility Management Solution Company for both
-            individuals &businesses to subscribe to our solution to cover your
+            individuals & businesses to subscribe to our solution to cover your
             complete maintenance of digital systems & property under service
             maintenance solution that includes all kinds of fixing at client
             premises by our professionally trained engineers & technicians. And
@@ -127,8 +113,9 @@ const Individul = () => {
             one plan.
           </p>
           <Link to="aboutus">
-            {" "}
-            <button className="btn mt-8">Learn More</button>
+            <button className="btn mt-4 md:mt-8 md:ml-0 ml-6">
+              Learn More
+            </button>
           </Link>
         </div>
       </div>
@@ -206,7 +193,6 @@ const Individul = () => {
               </div>
             </div>
           </div>
-        
 
           <div
             data-aos="zoom-out-right"
@@ -234,60 +220,49 @@ const Individul = () => {
         <ul class="features">
           <li class="item-features">
             <div class="cell  features-left">
-              <img
-                class="img-valor test"
-                src={mantenimiento}
-                alt="logo"
-              />
+              <img class="img-valor test" src={mantenimiento} alt="logo" />
             </div>
             <div class="cell">
               <p class="text pre-line">
-              Package Includes Service cost, fixing, repairing, as per services if any need of parts and any new kind of hardware that will be provided by user itself or it can be purchased by them on nominal discount from our partner stores.
+                Package Includes Service cost, fixing, repairing, as per
+                services if any need of parts and any new kind of hardware that
+                will be provided by user itself or it can be purchased by them
+                on nominal discount from our partner stores.
               </p>
             </div>
           </li>
           <li class="item-features">
             <div class="cell">
               <p class="text pre-line">
-              Our technician is just a click away from your premises whenever you need support just think about one brand Letusmaintain.com
-
-
+                Our technician is just a click away from your premises whenever
+                you need support just think about one brand Letusmaintain.com
               </p>
             </div>
             <div class="cell features-right">
-              <img
-                class="img-valor"
-                src={click}
-                alt="logo"
-              />
+              <img class="img-valor" src={click} alt="logo" />
             </div>
           </li>
           <li class="item-features">
             <div class="cell features-left">
-              <img
-                class="img-valor test"
-                src={user}
-                alt="logo"
-              />
+              <img class="img-valor test" src={user} alt="logo" />
             </div>
             <div class="cell">
               <p class="text pre-line">
-              Once subscribed the package then just verify your details via mail, and register into subscriber login with your username & password provided at the time of subscribing the plan on your provided email address
-
-
+                Once subscribed the package then just verify your details via
+                mail, and register into subscriber login with your username &
+                password provided at the time of subscribing the plan on your
+                provided email address
               </p>
             </div>
           </li>
           <li class="item-features">
             <div class="cell">
-              <p class="text pre-line">To file the service complaint just use your dashboard login</p>
+              <p class="text pre-line">
+                To file the service complaint just use your dashboard login
+              </p>
             </div>
             <div class="cell features-right">
-              <img
-                class="img-valor"
-                src={login}
-                alt="logo"
-              />
+              <img class="img-valor" src={login} alt="logo" />
             </div>
           </li>
           <li class="item-features">
@@ -296,65 +271,57 @@ const Individul = () => {
             </div>
             <div class="cell">
               <p class="text pre-line">
-              The service engineer will be at your doorstep within 2 to 3 hours after filling the request or as per your convenience
+                The service engineer will be at your doorstep within 2 to 3
+                hours after filling the request or as per your convenience
               </p>
             </div>
           </li>
           <li class="item-features">
             <div class="cell">
-              <p class="text pre-line">Plan valid for one year from the date of subscription</p>
+              <p class="text pre-line">
+                Plan valid for one year from the date of subscription
+              </p>
             </div>
             <div class="cell features-right">
-              <img
-                class="img-valor"
-                src={year}
-                alt="logo"
-              />
+              <img class="img-valor" src={year} alt="logo" />
             </div>
           </li>
         </ul>
       </div>
 
-<Induvidualvisits/>
-      <ServicesSliderEnterprice/>
+      <Induvidualvisits />
+      <ServicesSliderEnterprice />
 
-      <section class="us">
+      <section class="us mt-6 md:mb-0 mb-20">
         <div class="choose-us">
           <h2>Why Choose Us?</h2>
-          <div class="item-us flex justify-center">
-            <img className="testcontact" src={qualified} alt="Icon 1" />
-            <div>
-            <h3>Qualified Personnel</h3>
-            <p>
-              We have qualified professionals for all the services we provide.
-              Quality service is our pride.
-            </p>
-            </div>
-          </div>
-          <div class="item-us">
-            <img className="testcontact" src={services2} alt="Icon 2" />
-            <h3>Impeccable Service</h3>
-            <p>
-              Our services are world-class and we ensure to deliver give on.time
-              delivery.
-            </p>
-          </div>
-          <div class="item-us ">
-            <img className="testcontact" src={support} alt="Icon 3" />
-            <div>
-              <h3>24/7 Customer Service</h3>
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full sm:w-auto mb-6 sm:mb-0">
+              <img class="mx-auto" src={qualified} alt="Icon 1" />
+              <h3>Qualified Personnel</h3>
               <p>
-                Our clients can reach us at any moment in time. During the day
-                or night.
+                We have qualified professionals for all the services we provide.
+                Quality service is our pride.
               </p>
+            </div>
+            <div class="w-full sm:w-auto mb-6 sm:mb-0">
+              <img class="mx-auto" src={services2} alt="Icon 2" />
+              <h3>Impeccable Service</h3>
+              <p>Our services are world-class and we ensure timely delivery.</p>
+            </div>
+            <div class="w-full sm:w-auto">
+              <img class="mx-auto" src={support} alt="Icon 3" />
+              <div>
+                <h3>24/7 Customer Service</h3>
+                <p>Our clients can reach us at any moment, day or night.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-     <Footer/>
+      <Footer />
     </div>
   );
 };
 
 export default Individul;
-
