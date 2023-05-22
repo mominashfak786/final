@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import "../style/home.css";
 import logo2 from "../assets/oterhs/logo -light.png";
 import video from "../assets/video/Business Consulting Background - iStock Video.mp4";
