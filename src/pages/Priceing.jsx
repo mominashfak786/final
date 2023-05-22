@@ -13,7 +13,7 @@ const Priceing = () => {
   };
   return (
     <div>
-      <div className="bg-[#808080] pl-20 pr-20">
+      <div className="bg-[#808080]">
         <Nav />
       </div>
 

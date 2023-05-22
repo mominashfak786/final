@@ -1,6 +1,9 @@
 .slideritem{
     border: 2px solid white;
   }
+  .carousel{
+    display: inline-block !important;
+  }
   
   
   
