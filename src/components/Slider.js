@@ -8,6 +8,7 @@ import logo from "../assets/oterhs/logo -light.png";
 import indu3 from "../assets/oterhs/indu3.png";
 import indu4 from "../assets/oterhs/indu4.png";
 import { Link } from "react-router-dom";
+
 export const SliderEnterprise = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -24,18 +25,21 @@ export const SliderEnterprise = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <div className="-mt-10">
       <div className="relative  h-screen">
         <Carousel
-        transitionTime={0.5}
-        infiniteLoop
-        autoPlay={true}
-        interval={2000}
-        showIndicators={false}
-        showThumbs={false}
-        className="carousel"
-      >
+          transitionTime={0.5}
+          infiniteLoop
+          autoPlay={true}
+          interval={2000}
+          showIndicators={!isMobile} 
+          showThumbs={!isMobile} 
+          className="carousel"
+          swipeable={!isMobile} 
+          emulateTouch={!isMobile} 
+        >
           <div>
             <p className="pt-10 pb-10">
               <img
@@ -97,18 +101,36 @@ export const SliderEnterprise = () => {
   );
 };
 export const SliderIndividual = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="-mt-10">
       <div className="relative  h-screen">
         <Carousel
-        transitionTime={0.5}
-        infiniteLoop
-        autoPlay={true}
-        interval={2000}
-        showIndicators={false}
-        showThumbs={false}
-        className="carousel"
-      >
+          transitionTime={0.5}
+          infiniteLoop
+          autoPlay={true}
+          interval={2000}
+          showIndicators={!isMobile} 
+          showThumbs={!isMobile} 
+          className="carousel"
+          swipeable={!isMobile} 
+          emulateTouch={!isMobile}
+        >
           <div>
             <p className="pt-10 pb-10">
               <img
