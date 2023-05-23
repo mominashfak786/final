@@ -34,7 +34,7 @@ const ContactwithUs = () => {
     <div className="">
       <img
         src="https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg"
-        className="relative max-h-screen w-full object-cover "
+        className="relative lg:block h-[1700px] md:h-[1400px] "
         alt=""
       />
 

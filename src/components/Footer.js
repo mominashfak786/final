@@ -168,12 +168,12 @@ const Footer = () => {
             <a className="footer-link">Shipping & Delivery</a>
           </Link>
         </div>
-        <div className=" text-4xl text-gray-900 text-center">
+        <div className=" text-3xl text-gray-900 text-center font-bold">
           Operational In
         </div>
         <div className="flex flex-col items-center justify-center md:px-6">
           <div className=" py-8 px-4 gap-1">
-            <div className="footer-title text-xl text-black">Asia</div>
+            <div className="footer-title text-xl text-gray-900">Asia</div>
             <div className="footer-content flex flex-wrap">
               <p className="w-1/2 sm:w-auto md:mr-5">India</p>
               <p className="w-1/2 sm:w-auto md:mr-5">Singapore</p>
@@ -217,43 +217,62 @@ const Footer = () => {
       </footer>
       <hr />
       <div className="flex flex-col px-8 justify-center items-center sm:flex-row sm:justify-between sm:items-center">
-  <div className="logo-footer mb-4  ">
+  <div className="logo-footer mb-4">
     <img src={Logo} alt="Company Logo" />
     <div className="text-sm items-center">
       <p>©2023 All rights reserved. LetUsMaintain</p>
     </div>
   </div>
-  <div className="flex pb-4 ">
+  <div className="flex pb-4">
     <a
-      className="mr-2 sm:mr-0  sm:mb-0"
+      className="mr-2 sm:mr-0 sm:mb-0"
       href="https://www.facebook.com/profile.php?id=100092328792629"
       target="_blank"
+      rel="noopener noreferrer"
     >
-      <img src={facebook} alt="Facebook" className="w-5 h-5 sm:w-8 sm:h-8" />
+      <img
+        src={facebook}
+        alt="Facebook"
+        className="w-5 h-5 sm:w-8 sm:h-8"
+      />
     </a>
     <a
-      className="mr-2 sm:mr-0  sm:mb-0"
+      className="mr-2 sm:mr-0 sm:mb-0"
       href="https://instagram.com/letusmaintain?igshid=NTc4MTIwNjQ2YQ=="
       target="_blank"
+      rel="noopener noreferrer"
     >
-      <img src={instagram} alt="Instagram" className="w-5 h-5 sm:w-8 sm:h-8" />
+      <img
+        src={instagram}
+        alt="Instagram"
+        className="w-5 h-5 sm:w-8 sm:h-8"
+      />
     </a>
     <a
-      className="mr-2 sm:mr-0  sm:mb-0"
+      className="mr-2 sm:mr-0 sm:mb-0"
       href="https://twitter.com/letusmaintain?s=21&t=ITFELYxk4Sjk4PwhNSI7WQ"
       target="_blank"
+      rel="noopener noreferrer"
     >
-      <img src={twitter} alt="Twitter" className="w-5 h-5 sm:w-8 sm:h-8" />
+      <img
+        src={twitter}
+        alt="Twitter"
+        className="w-5 h-5 sm:w-8 sm:h-8"
+      />
     </a>
     <a
       href="https://www.linkedin.com/showcase/letusmaintain-com/"
       target="_blank"
+      rel="noopener noreferrer"
     >
-      <img src={linkedin} alt="LinkedIn" className="w-5 h-5 sm:w-8 sm:h-8" />
+      <img
+        src={linkedin}
+        alt="LinkedIn"
+        className="w-5 h-5 sm:w-8 sm:h-8"
+      />
     </a>
   </div>
 </div>
-
 
     </>
   );

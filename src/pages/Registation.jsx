@@ -98,29 +98,24 @@ const Registation = () => {
 
   return (
     <div className="">
-     
   
-    
       <img
-        className="relative  lg:block  w-screen h-auto"
+        className="  relative lg:block h-[1100px] md:h-[900px]"
         src="https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80"
         alt=""
       />
         <div className="absolute top-0">
     <Nav  other={"other"}/>
     </div>
-      <div className=" lg:w-8/12   m-auto">
-        <div class="min-h-screen absolute top-16  flex ml-0 lg:ml-60">
-          <div class="container max-w-screen-lg flex items-center ">
-            <div className="">
-              <div className="flex pt-20 justify-between items-center">
-                <div className="">
-                  <h2 class="font-semibold text-xl text-[#fff] pb-10">
+    <div className=" lg:w-8/12 m-auto ">
+          <div class="min-h-screen absolute top-32  flex ml-0 lg:ml-20">
+            <div class="container max-w-screen-lg ">
+              <div className="">
+                <div className="block justify-between items-center">
+                  <h2 class="font-semibold text-xl text-center mb-5  text-white">
                     Please Fill in the below details{" "}
                   </h2>
                 </div>
-                
-              </div>
 
               <div class="bg-[#fff]  rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                 <div class="grid  gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
@@ -274,7 +269,7 @@ const Registation = () => {
 
                   
 
-                      <div class="md:col-span-5 text-right">
+                      <div class="md:col-span-5 text-center">
                         <div class="">
                           <button class="bg-[#0000FF] hover:bg-blue-700 text-[#fff] font-bold py-5 px-9 rounded">
                             {loading ? (
@@ -295,8 +290,8 @@ const Registation = () => {
             </div>
           </div>
         </div>
-              <Footer/>
       </div>
+      <Footer />
     </div>
   );
 };

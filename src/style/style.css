@@ -624,7 +624,7 @@ div.choose-us {
 /* FOOTER */
 
 .footer-link {
-  color: #333;
+  color: #000000;
   text-decoration: none;
 }
 .footer-link:hover {
@@ -634,6 +634,10 @@ div.choose-us {
 /* Footer Styles */
 footer {
 margin: auto !important;
+}
+.footer-title{
+  color: #000000  !important;
+
 }
 
 .logo-footer {

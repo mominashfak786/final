@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import "../style/style.css"
+import { useState } from "react";
+import "../style/style.css";
 import PhoneInput from "react-phone-input-2";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
@@ -26,8 +26,6 @@ const packagePrices = {
   North_America: {
     Canada: "CAD 1200",
     USA: "US$ 1350 ",
-
-    // add more countries and prices as needed
   },
   Europe: {
     UK: "GBP",
@@ -52,7 +50,6 @@ const packagePrices = {
     Norway: "NOK",
     Lithuania: "LTL",
     Romania: "RON",
-    // add more countries and prices as needed
   },
 };
 
@@ -91,7 +88,6 @@ const CountryPackages = () => {
   const handleOnChange = (value) => {
     setPhone(value);
   };
-  const randomNumber = Math.floor(Math.random() * 900000) + 100000;
 
   const handalerazorpay = (formData) => {
     const data = { amount: 150 };
@@ -185,7 +181,8 @@ const CountryPackages = () => {
 
       Swal.fire({
         title: "Select A Payment Method",
-        html: '<button  margin-right:10px;"  class="modal-button" id="razorpay">Razor Pay</button><button class="modal-stripe" id="stripe">Stripe</button><button class="modal-paypal" id="paypal">Paypal</button>',
+        html:
+          '<button  margin-right:10px;"  class="modal-button" id="razorpay">Razor Pay</button><button class="modal-stripe" id="stripe">Stripe</button><button class="modal-paypal" id="paypal">Paypal</button>',
         didOpen: () => {
           document
             .getElementById("razorpay")
@@ -243,24 +240,21 @@ const CountryPackages = () => {
       </style>
       <div>
         <img
-          className="relative  lg:block  h-[1400px] "
+          className="relative lg:block h-[1700px] md:h-[1400px] "
           src="https://www.advanceecomsolutions.com/wp-content/uploads/2022/10/became-a-partner.jpg"
           alt=""
         />
-       <div className="absolute top-0">
-        <Nav type="enterprice"/> 
-       </div>
+        <div className="absolute top-0">
+          <Nav type="enterprice" />
+        </div>
         <div className=" lg:w-8/12 m-auto ">
-          <div class="min-h-screen absolute top-32  flex ml-0 lg:ml-60">
+          <div class="min-h-screen absolute top-32  flex ml-0 lg:ml-20">
             <div class="container max-w-screen-lg ">
               <div className="">
-                <div className="flex justify-between items-center">
-                  <div className="">
-                    <h2 class="font-semibold text-xl text-white">
-                      Please Fill in the below details{" "}
-                    </h2>
-                  </div>
-                  
+                <div className="block justify-between items-center">
+                  <h2 class="font-semibold text-xl text-center mb-5  text-white">
+                    Please Fill in the below details{" "}
+                  </h2>
                 </div>
 
                 <div class="bg-[#fff]  rounded shadow-lg p-4 px-4 md:p-8 mb-6">
@@ -313,7 +307,7 @@ const CountryPackages = () => {
                           />
                         </div>
 
-                        <div class="md:col-span-2 ">
+                        <div class="md:col-span-3">
                           <label for="address">Permission Type : </label>
                           <input
                             type="radio"
@@ -568,30 +562,17 @@ const CountryPackages = () => {
                                       <div className="flex items-center space-x-3">
                                         <div>
                                           <div className="font-bold">
-                                            Yearly Fee{" "}
+                                            Yearly Fee
                                           </div>
                                         </div>
                                       </div>
                                     </td>
-                                    <td className="mt-10 -mb-20">
-                                      <h2 className="text-xl w-40 font-bold bg-[#00ff00] pl-5 pt-2 pb-2 text-white rounded">
+                                    <td className="mt-5 sm:mt-10 -mb-5 sm:-mb-20">
+                                      <h2 className="text-xl sm:text-2xl w-40 font-bold bg-[#00ff00] pl-5 pt-2 pb-2 text-white rounded">
                                         {selectedPackagePrice
                                           ? selectedPackagePrice
                                           : " "}
                                       </h2>
-                                      <br />
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div className="flex items-center space-x-3">
-                                        <div>
-                                          <div className="font-bold"></div>
-                                        </div>
-                                      </div>
-                                    </td>
-                                    <td className="btn border-none bg-[#3b82f6] ">
-                                      Selected
                                       <br />
                                     </td>
                                   </tr>
@@ -611,9 +592,9 @@ const CountryPackages = () => {
                           <p className="text-red-600">{captchaerror}</p>
                         </div>
 
-                        <div class="md:col-span-5 text-right">
+                        <div class="md:col-span-5 text-center">
                           <div class="">
-                            <button class="bg-[#0000FF] hover:bg-blue-700 text-[#fff] font-bold py-5 px-9 rounded">
+                            <button class="bg-[#0000FF] hover:bg-blue-700 text-[#fff] font-bold p-4  rounded">
                               {loading ? (
                                 <Loading />
                               ) : (
@@ -632,7 +613,7 @@ const CountryPackages = () => {
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

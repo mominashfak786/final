@@ -24,7 +24,7 @@ const Nav = ({ type }) => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className=" mx-auto p-6">
       <div className="flex justify-between items-center">
         <div>
           <img className="w-3/4 md:w-1/2" src={logo2} alt="" />

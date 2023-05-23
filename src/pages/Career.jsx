@@ -110,25 +110,22 @@ const Career = () => {
   return (
     <div>
       <img
-        className="relative  lg:block  w-screen h-[1200px]"
+        className="relative  lg:block  w-screen h-[1500px]  md:h-[1000px]"
         src="https://png.pngtree.com/thumb_back/fh260/background/20220525/pngtree-businessman-walking-on-the-career-road-image_1401185.jpg"
         alt=""
       />
-    <div className="absolute top-1">
+    <div className="absolute top-0">
         <Nav/>
     </div>
       <div className=" lg:w-8/12 m-auto">
-        <div class="min-h-screen absolute top-32  flex ml-0 lg:ml-60">
+        <div class="min-h-screen absolute top-32  flex ml-0 md:ml-60 md:mr-10">
           <div class="container max-w-screen-lg ">
             <div className="">
-              <div className="flex justify-between items-center">
-                <div className="">
-                  <h2 class="font-semibold text-xl text-gray-600">
+            <div className="block justify-between items-center">
+                  <h2 class="font-semibold text-xl text-center mb-5  text-white">
                     Please Fill in the below details{" "}
                   </h2>
                 </div>
-                
-              </div>
 
               <div class="bg-[#ffff]  rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                 <div class="grid  gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
@@ -373,7 +370,7 @@ const Career = () => {
                        
                       </div>
 
-                      <div class="md:col-span-5 text-right">
+                      <div class="md:col-span-5 text-center">
                         <div class="">
                           <button class="bg-[#0000FF] text-[#fff] hover:bg-blue-700 text-white font-bold py-5 px-9 rounded">
                             {loading ? (
